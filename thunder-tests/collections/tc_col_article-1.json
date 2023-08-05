@@ -1,0 +1,59 @@
+{
+    "_id": "c551adaf-54e5-4221-88d2-9b76747b13e6",
+    "colName": "Article 1",
+    "created": "2023-08-05T20:10:03.418Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d14a0002-cb3c-4357-b6d3-137e4942c5f7",
+            "colId": "c551adaf-54e5-4221-88d2-9b76747b13e6",
+            "containerId": "",
+            "name": "store data",
+            "url": "",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-05T20:10:58.466Z",
+            "modified": "2023-08-05T20:49:23.333Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"value\": \"welcome\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0b0df6e5-6ecb-4f63-a2af-d0d8be81c7e4",
+            "colId": "c551adaf-54e5-4221-88d2-9b76747b13e6",
+            "containerId": "",
+            "name": "retrive data",
+            "url": "",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-05T20:11:07.574Z",
+            "modified": "2023-08-05T20:11:07.574Z",
+            "headers": []
+        },
+        {
+            "_id": "42af9346-04b2-4530-aef1-bcc2e9234623",
+            "colId": "c551adaf-54e5-4221-88d2-9b76747b13e6",
+            "containerId": "",
+            "name": "delete data",
+            "url": "",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-08-05T20:11:16.364Z",
+            "modified": "2023-08-05T20:49:28.535Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:3000/"
+        }
+    }
+}
