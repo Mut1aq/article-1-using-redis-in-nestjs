@@ -6,7 +6,7 @@ import { CreateDataDto } from 'dtos/create-data.dto';
 @Injectable()
 export class AppService {
   constructor(@Inject(CACHE_MANAGER) private cacheManager: Cache) {}
-  async getData(): Promise<string | undefined> {
+  async getData(): Promise<string | undefined | null> {
     const value = await this.cacheManager.get<string>('key'); // ? Retrieve data from the cache
 
     return value;

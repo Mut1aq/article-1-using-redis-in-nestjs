@@ -1,9 +1,11 @@
+import { CacheInterceptor } from '@nestjs/cache-manager';
 import { Controller, Delete, Get, Post } from '@nestjs/common';
-import { Body } from '@nestjs/common/decorators';
+import { Body, UseInterceptors } from '@nestjs/common/decorators';
 import { CreateDataDto } from 'dtos/create-data.dto';
 import { AppService } from './app.service';
 
 @Controller()
+@UseInterceptors(CacheInterceptor)
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
