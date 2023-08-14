@@ -1,4 +1,4 @@
-import { CacheInterceptor } from '@nestjs/cache-manager';
+import { CacheInterceptor, CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { Controller, Delete, Get, Post } from '@nestjs/common';
 import { Body, UseInterceptors } from '@nestjs/common/decorators';
 import { CreateDataDto } from 'dtos/create-data.dto';
@@ -10,6 +10,8 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
+  @CacheKey('custom_key')
+  @CacheTTL(20)
   async getData() {
     try {
       return await this.appService.getData();
